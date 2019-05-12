@@ -5,7 +5,7 @@ let spread;
 let iterations;
 
 function setup() {
-  createCanvas($(document).width(), 900).parent('tree_p5');
+  createCanvas(document.documentElement.clientWidth, 900).parent('tree_p5');
   thickness = document.getElementById('thickness').value;
   randomness = document.getElementById('randomness').value / 100;
   spread = document.getElementById('spread').value;
