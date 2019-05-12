@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+    <title>Website | Projects</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Sample HTML/CSS website">
+    <meta name="keywords" content="HTML, CSS, HTML/CSS website">
+    <meta name="author" content="Marcel Riera">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.1/p5.js"></script>
+    <link href="./style.css" type="text/css" rel="stylesheet">
+  </head>
+
+  <body>
+    <main>
+
+    <form id='tree_p5_form'>
+      Thickness <input type='range' min='1' max='15' value='7' class='slider' id='thickness'>
+      Randomness <input type='range' min='0' max='40' value='32' class='slider' id='randomness'>
+      Spread <input type='range' min='0' max='70' value='30' class='slider' id='spread'>
+      <input type='button' value='Generate' onclick='setup()'>
+      <p id='iterations'></p>
+    </form>
+
+    <div id='tree_p5'></div>
+    <script src='./tree.js'></script>
+
+
+  </main>
+  </body>
+</html>

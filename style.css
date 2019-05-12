@@ -1,0 +1,78 @@
+
+body {
+  position: absolute;
+  font-family: Arial, Helvetica, Sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  width: 100%;
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+  background-color: #f4f4f4;
+  overflow-x: hidden;
+}
+
+
+/* ------------ Tree p5 ------------ */
+
+#tree_p5 {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100vh;
+}
+#tree_p5_form {
+  z-index: 10;
+  position: absolute;
+  left: 60%;
+  top: 75vh;
+  width: 10%;
+  text-align: center;
+  font-style: italic;
+  color: #666;
+}
+#tree_p5_form input.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 10px;
+  border-radius: 5px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+#tree_p5_form input.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #4caf50;
+  cursor: pointer;
+}
+#tree_p5_form input.slider::-moz-range-thumb {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #4caf50;
+  cursor: pointer;
+}
+#tree_p5_form input[type='button'] {
+  font-size: inherit;
+  margin-top: 10px;
+  width: 70%;
+  height: 34px;
+  border-radius: 6px;
+  background: #4caf50;
+  opacity: 0.7;
+  border: none;
+  color: white;
+}
+#tree_p5_form input[type='button']:hover {
+  background-color: #4ccf50;
+}
+#tree_p5_form #iterations {
+  color: darkgray;
+  font-size: 12px;
+}
